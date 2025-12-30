@@ -1,0 +1,10 @@
+TODO List
+
+Functionality :
+-Python Downloading script
+
+UI:
+-When text is too long, it goes out of the input
+-Better ui ...
+-Adding buttons to download the video, either mp3 or mp4
+-Video thumbnail ?
