@@ -25,12 +25,12 @@ int main() {
         return 1;
     }
 
-    //Loading font
-    //Adjust the font by the one you want (this one works only on macOS)
-    TTF_Font *font = TTF_OpenFont("/System/Library/Fonts/SFNS.ttf", 18);
-    TTF_Font *titleFont = TTF_OpenFont("/System/Library/Fonts/SFNS.ttf", 36 );
-    if (!font) {
-        SDL_Log("Impossible to open the font");
+    //Loading fonts
+    //Adjust the fonts by the one you want (this one works only on macOS)
+    TTF_Font *font = TTF_OpenFont("fonts/AovelSansRounded-rdDL.ttf", 18);
+    TTF_Font *titleFont = TTF_OpenFont("fonts/AovelSansRounded-rdDL.ttf", 36 );
+    if (!font || !titleFont) {
+        SDL_Log("Impossible to open the fonts");
         return 1;
     }
 
