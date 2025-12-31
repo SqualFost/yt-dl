@@ -1,10 +1,9 @@
 TODO List
 
-Functionality :
--Python Downloading script
-
 UI:
+-Download status
+-Be able to chose the output destination
 -When text is too long, it goes out of the input
 -Better ui ...
--Adding buttons to download the video, either mp3 or mp4
+-Adding buttons to chose the desired format either mp3 or mp4
 -Video thumbnail ?
