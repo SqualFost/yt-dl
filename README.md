@@ -1,4 +1,4 @@
-# Youtube Downloader
+# LoadTube
 
 Small project in **C using SDL3** to create a minimalist UI for downloading Youtube videos via their links.
 
@@ -8,8 +8,9 @@ Small project in **C using SDL3** to create a minimalist UI for downloading Yout
 
 - Creation of a **graphical window** using SDL3.
 - Text field for entering a video link.
-- Keyboard input and backspace handling.
+- Keyboard input / clipboard handling.
 - Real-time display of typed text within the window.
+- Video download
 
 ---
 
@@ -17,6 +18,7 @@ Small project in **C using SDL3** to create a minimalist UI for downloading Yout
 
 - [SDL3](https://www.libsdl.org/) and [SDL_ttf](https://github.com/libsdl-org/SDL_ttf)
 - [CMake](https://cmake.org/)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation) standalone
 
 ---
 
@@ -32,7 +34,7 @@ cd yt-dl
 
    For macOS ([Brew](https://brew.sh)) :
    ```bash
-    brew install sdl3 sdl3_ttf cmake
+    brew install sdl3 sdl3_ttf cmake yt-dlp
    ```
 
    For Linux (Ubuntu/Debian) : 
@@ -58,8 +60,9 @@ make
 ./yt-dl
 ```
 - An SDL window will open with a text field
-- Enter the video URL then press ENTER (not functional)
-- Text will be displayed and be used to download the video via python script (not done)
+- Enter the video URL then click "Download"
+- Text will be displayed and be used to display the download status (not done)
+- The video will be downloaded in the cmake-build-debug folder
 
 ## Notes
 - Everything is basic, thanks to **C** UI
